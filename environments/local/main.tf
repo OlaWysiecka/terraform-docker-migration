@@ -13,3 +13,8 @@ module "database" {
   database_user     = var.database_user
   database_password = var.database_password
 }
+module "web" {
+  source = "../../modules/web"
+
+  network_name = var.network_name
+}
