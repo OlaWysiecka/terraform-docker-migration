@@ -18,3 +18,9 @@ module "web" {
 
   network_name = var.network_name
 }
+module "nginx" {
+  source = "../../modules/nginx"
+
+  network_name = var.network_name
+  config_path  = abspath("${path.root}/../../nginx/nginx.conf")
+}

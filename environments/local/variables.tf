@@ -22,3 +22,7 @@ variable "database_password" {
   type        = string
   sensitive   = true
 }
+variable "config_path" {
+  description = "Absolute path to nginx configuration"
+  type        = string
+}
